@@ -22,7 +22,48 @@
 
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
+	
+    <style>
+    .container {
+    position: relative;
+    width: 50%;
+    }
 
+    .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    }
+
+    .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    }
+
+    .container:hover .image {
+    opacity: 0.3;
+    }
+
+    .container:hover .middle {
+    opacity: 1;
+    }
+
+    .text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    }
+    </style>
   </head>
 
   <body id="page-top">
@@ -123,13 +164,17 @@
           </div>
         </div>
       </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+		
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
         <div class="my-auto">
           <h2 class="mb-5">Projects</h2>
-	  	<span class="d-none d-lg-block">
-          		<img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
-        	</span>
+            <div class="container">
+  		<img src="img/profile.jpg" alt="Avatar" class="image" style="width:100%">
+  		<div class="middle">
+                  <div class="text">John Doe</div>
+                </div>
+        </div>
+		
           <p>
 		  Ocaml calculator: an advanced calculator in ocaml capable of doing linear algebra, differential equations, and statistics operations.<br>
 		  Camlmessage: a peer to peer messaging program that contains features such as a friends list, extensive autocorrect, and a group chat features. 

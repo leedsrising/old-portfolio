@@ -1,11 +1,11 @@
 // Modified from author Grace Guan's original version
-var NUMSINES = 60; // how many of these things can we do at once?
+var NUMSINES = 40; // how many of these things can we do at once?
 var sines = new Array(NUMSINES); // an array to hold all the current angles
 var rad; // an initial radius value for the central sine
 var i; // a counter variable
 
 // play with these to get a sense of what's going on:
-var fund = 0.025; // the speed of the central sine
+var fund = 0.006; // the speed of the central sine
 var ratio = 1; // what multiplier for speed is each additional sine?
 var alpha = 50; // how opaque is the tracing system
 

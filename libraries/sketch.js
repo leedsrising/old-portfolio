@@ -1,5 +1,5 @@
 // Modified from author Grace Guan's original version
-var NUMSINES = 30; // how many of these things can we do at once?
+var NUMSINES = 60; // how many of these things can we do at once?
 var sines = new Array(NUMSINES); // an array to hold all the current angles
 var rad; // an initial radius value for the central sine
 var i; // a counter variable
